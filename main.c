@@ -7,11 +7,14 @@
 */
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <time.h>
+#include "matrisoperations.h"
 
 int main(int argc, char const *argv[])
 {
-
-
+    srand(time(NULL));
+    float a = 1+rand()*5;
+    printf("%2.f",a);
+    
     return 0;
 }
