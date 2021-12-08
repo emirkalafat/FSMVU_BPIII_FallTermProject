@@ -23,8 +23,9 @@ void randomMatrisDoldur(int** dizi,int diziBoyutu){
     {
         for (size_t j = 0; j < diziBoyutu; j++)
         {
-            srand(time(NULL));
+            //srand(time(NULL));
             dizi[i][j]=(int)rand()%10;
+            
         }
     }
 }
@@ -42,14 +43,14 @@ void matrisYazdir(int **dizi,int diziBoyutu){
     {
         for (size_t j = 0; j < diziBoyutu; j++)
         {
-            printf("%d",dizi[i][j]);
+            printf("%d ",dizi[i][j]);
         }
         puts("");
     }
 }
-/*
-int **operasyon1(int **dizi1,int **dizi2, int diziBoyutu){
 
+int **operasyon1(int **dizi1,int **dizi2, int diziBoyutu){
+    
     return 0;
 }
-*/
+
