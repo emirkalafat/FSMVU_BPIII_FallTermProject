@@ -7,14 +7,49 @@
 */
 #include <stdlib.h>
 #include <stdio.h>
-
-int** randomMatrisDoldur(int** matris,int BOYUT){
-    for (size_t i = 0; i < BOYUT; i++)
+#include <time.h>
+#include "matrisoperations.h"
+int **matrisOlustur(int diziBoyutu){
+    int **dizi = malloc(diziBoyutu*sizeof(int *));
+    for (size_t i = 0; i < diziBoyutu; i++)
     {
-        rand()*100;
+        dizi[i]=malloc(diziBoyutu*sizeof(int));
     }
     
+    return dizi;
 }
-int** operasyon1(int** matris1,int** matris2, int islemTipi){
+void randomMatrisDoldur(int** dizi,int diziBoyutu){
+    for (size_t i = 0; i < diziBoyutu; i++)
+    {
+        for (size_t j = 0; j < diziBoyutu; j++)
+        {
+            srand(time(NULL));
+            dizi[i][j]=(int)rand()%10;
+        }
+    }
+}
+void matrisDoldur(int **dizi,int diziBoyutu){
+    for (size_t i = 0; i < diziBoyutu; i++)
+    {
+        for (size_t j = 0; j < diziBoyutu; j++)
+        {
+            dizi[i][j]=1;
+        }
+    }
+}
+void matrisYazdir(int **dizi,int diziBoyutu){
+    for (size_t i = 0; i < diziBoyutu; i++)
+    {
+        for (size_t j = 0; j < diziBoyutu; j++)
+        {
+            printf("%d",dizi[i][j]);
+        }
+        puts("");
+    }
+}
+/*
+int **operasyon1(int **dizi1,int **dizi2, int diziBoyutu){
 
+    return 0;
 }
+*/

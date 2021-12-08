@@ -5,10 +5,12 @@
 * @date 1.12.2021
 * @author Ahmet Emir Kalafat ahmetemir.kalafat@stu.fsm.edu.tr
 */
-#ifndef MATRISOPERATIONS
-#define MATRISOPERATIONS
+#ifndef _MATRISOPERATIONS_
+#define _MATRISOPERATIONS_
 
-int** randomMatrisDoldur(int** matris,int BOYUT);
-int** operasyon1(int** matris1,int** matris2, int islemTipi);
+int **matrisOlustur(int diziBoyutu);
+void randomMatrisDoldur(int** dizi,int diziBoyutu);
+void matrisDoldur(int **dizi,int diziBoyutu);
+void matrisYazdir(int **dizi,int diziBoyutu);
 
 #endif
