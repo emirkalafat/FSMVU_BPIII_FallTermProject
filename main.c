@@ -13,8 +13,9 @@
 
 int main(int argc, char const *argv[])
 {
-    int a[BOYUT][BOYUT];
-    randomMatrisDoldur(a,BOYUT);
+    int **a=matrisOlustur(BOYUT);
+    
+    matrisDoldur(a,BOYUT);
     matrisYazdir(a,BOYUT);
     
     return 0;

@@ -9,12 +9,12 @@
         ""
       ],
       "stopAtEntry": false,
-      "cwd": "c:/Users/emirk/Documents/vsCode/C/BP3_P1",
+      "cwd": "c:/Users/emirk/Documents/cPrpje/FSMVU_BPIII_FallTermProject",
       "environment": [],
-      "program": "c:/Users/emirk/Documents/vsCode/C/BP3_P1/build/Debug/outDebug",
+      "program": "c:/Users/emirk/Documents/cPrpje/FSMVU_BPIII_FallTermProject/build/Debug/outDebug",
       "internalConsoleOptions": "openOnSessionStart",
       "MIMode": "gdb",
-      "miDebuggerPath": "C:/MinGW/bin/gdb.exe",
+      "miDebuggerPath": "C:/msys64/mingw64/bin/gdb.exe",
       "externalConsole": false,
       "setupCommands": [
         {
