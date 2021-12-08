@@ -9,48 +9,67 @@
 #include <stdio.h>
 #include <time.h>
 #include "matrisoperations.h"
-int **matrisOlustur(int diziBoyutu){
-    int **dizi = malloc(diziBoyutu*sizeof(int *));
-    for (size_t i = 0; i < diziBoyutu; i++)
+int **matrisOlustur(int matrisBoyutu){
+    int **matris = malloc(matrisBoyutu*sizeof(int *));
+    for (int i = 0; i < matrisBoyutu; i++)
     {
-        dizi[i]=malloc(diziBoyutu*sizeof(int));
+        matris[i]=malloc(matrisBoyutu*sizeof(int));
     }
     
-    return dizi;
+    return matris;
 }
-void randomMatrisDoldur(int** dizi,int diziBoyutu){
-    for (size_t i = 0; i < diziBoyutu; i++)
+void randomMatrisDoldur(int **matris,int satir, int sutun){
+    for (int i = 0; i < satir; i++)
     {
-        for (size_t j = 0; j < diziBoyutu; j++)
+        for (int j = 0; j < sutun; j++)
         {
-            //srand(time(NULL));
-            dizi[i][j]=(int)rand()%10;
+            srand(time(NULL));
+            matris[i][j]=1+rand()%10;
             
         }
     }
 }
-void matrisDoldur(int **dizi,int diziBoyutu){
-    for (size_t i = 0; i < diziBoyutu; i++)
+void matrisBirDoldur(int **matris,int satir, int sutun){
+    for (int i = 0; i < satir; i++)
     {
-        for (size_t j = 0; j < diziBoyutu; j++)
+        for (int j = 0; j < sutun; j++)
         {
-            dizi[i][j]=1;
+            matris[i][j]=1;
         }
     }
 }
-void matrisYazdir(int **dizi,int diziBoyutu){
-    for (size_t i = 0; i < diziBoyutu; i++)
+void matrisYazdir(int **matris,int satir, int sutun){
+    for (int i = 0; i < satir; i++)
     {
-        for (size_t j = 0; j < diziBoyutu; j++)
+        for (int j = 0; j < sutun; j++)
         {
-            printf("%d ",dizi[i][j]);
+            printf("%d\t",*(*matris+i)+j);
         }
-        puts("");
+        printf("");
     }
 }
 
-int **operasyon1(int **dizi1,int **dizi2, int diziBoyutu){
+int **operasyon1(int **matris1,int **matris2, int boyut1, int boyut2){
     
-    return 0;
+    int sum = 0;
+    int count2 =0;
+    int **yeniMatris;
+    yeniMatris = matrisOlustur(boyut2);
+    for (int count = 0; count < boyut2 ; count++)
+    {
+        for (int i = 0; i < boyut2; i++)
+        {
+            for (int j = 0; j < boyut2; j++)
+            {
+                sum+= matris1[i][j+count2] * matris2[i][j+count2];
+            }
+            
+        }
+        count2++;
+    }
+    yeniMatris[0][0]=sum;
+    sum=0;
+    
+    return yeniMatris;
 }
 
