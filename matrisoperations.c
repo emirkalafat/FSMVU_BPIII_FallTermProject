@@ -44,9 +44,9 @@ void matrisYazdir(int **matris,int boyut){
     {
         for (int j = 0; j < boyut; j++)
         {
-            printf("%d\t",matris[i][j]);
+            printf("%d ",matris[i][j]);
         }
-        printf("\n");
+        puts("");
     }
 }
 int matrisBoyutBulucu(int matris1Boyut, int matris2Boyut, int islemTipi){
