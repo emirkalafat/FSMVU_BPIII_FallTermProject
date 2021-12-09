@@ -9,10 +9,13 @@
 #define _MATRISOPERATIONS_
 
 int **matrisOlustur(int diziBoyutu);
-void randomMatrisDoldur(int **dizi,int satir);
-void matrisBirDoldur(int **dizi,int boyut);
+void matrisRandomDoldur(int **dizi,int satir);
+void matrisOzelDoldur(int **dizi,int boyut,int doldurulacakSayi);
 void matrisYazdir(int **dizi,int boyut);
 int matrisBoyutBulucu(int matris1Boyut, int matris2Boyut, int islemTipi);
 int **operasyon1(int **matris1,int **matris2, int boyut1, int boyut,int islemTipi);
+int **ikiMatrisKontrol(int **matris1,int **matris2, int boyut1, int boyut2,int islemTipi);
+int **matrisBuyutucu(int **matris,int boyut);
+int programButunlulukSaglamasi(int boyut1,int boyut2);
 
 #endif

@@ -16,28 +16,39 @@ int main(int argc, char const *argv[])
     int **A;
     int **B;
     int boyut1,boyut2,islemtTpi;
-    puts("1. Matrisin boyutunu giriniz: ");
+    puts("1. Matrisin boyutunu giriniz [5][7][11]: ");
     scanf("%d",&boyut1);
-    puts("2. Matrisin boyutunu giriniz: ");
+    puts("2. Matrisin boyutunu giriniz [3][5][7]: ");
     scanf("%d",&boyut2);
-    puts("[0]Basit Carpma \n [1]Karmasik Carpma");
+    puts("[0]Basit Carpma \n[1]Karmasik Carpma");
     puts("islem seciniz: ");
     scanf("%d",&islemtTpi);
+    int denetim=programButunlulukSaglamasi(boyut1,boyut2);
+    if (denetim==0)
+    {
+        puts("Hatali Deger Girisi....\nProgramdan Cikiliyor");
+        return EXIT_FAILURE;
+    }
     
-    puts("***************");
-    A = matrisOlustur(boyut1);
-    randomMatrisDoldur(A,boyut1);
-    matrisYazdir(A,boyut1);
+    
+    
+    //puts("***************");
+    A = matrisOlustur(boyut1);//verilen boyutta matris için bellekte alan ayrılması
+    matrisRandomDoldur(A,boyut1);//oluşturulan matrisin rastgele sayılar ile doldurulması
+    matrisYazdir(A,boyut1);//matrisin yazdırılması
 
-    puts("***************");
+    //puts("***************");
 
     B = matrisOlustur(boyut2);
-    randomMatrisDoldur(B,boyut2);
+    matrisRandomDoldur(B,boyut2);
     matrisYazdir(B,boyut2);
 
-    puts("***************");
+    //puts("***************");
 
     int **C = operasyon1(A,B,boyut1,boyut2,islemtTpi);
     matrisYazdir(C,matrisBoyutBulucu(boyut1,boyut2,islemtTpi));
-    return 0;
+
+    puts("***************");
+
+    return EXIT_SUCCESS;
 }
