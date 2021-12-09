@@ -1,7 +1,7 @@
 /*
 * @file matrisoperations.c
-* @description ///"güncellenecek"executes main program functions///
-* @assignment First Misson
+* @description operations with matrices main file
+* @assignment Computer Engineering III Fallterm Project I
 * @date 1.12.2021
 * @author Ahmet Emir Kalafat ahmetemir.kalafat@stu.fsm.edu.tr
 */

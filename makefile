@@ -3,13 +3,13 @@ CFLAGS=-c -Wall
 all:makeBP3 run
 
 makeBP3: main.o matrisoperations.o
-	$(CC) main.o matrisoperations.o -o makeDeneme
+	$(CC) main.o matrisoperations.o -o BP3Proje
 
 main.o:main.c
 	$(CC) $(CFLAGS) main.c
 matrisoperations.o: matrisoperations.c matrisoperations.h
 	$(CC) $(CFLAGS) matrisoperations.c
 clean:
-	del *.o makeDeneme.exe
+	del *.o BP3Proje.exe
 run:
-	makeDeneme.exe
+	BP3Proje.exe
