@@ -24,9 +24,9 @@ void matrisRandomDoldur(int **matris,int boyut){
     puts("Rastgele sayi araligi belirleyiniz.(belirtilen sayilar dahil edilecektir)");
     int baslangic,bitis;
     printf("baslangic değeri: ");
-    scanf("%d",baslangic);
+    scanf("%d",&baslangic);
     printf("bitis değeri: ");
-    scanf("%d",bitis);
+    scanf("%d",&bitis);
     for (int i = 0; i < boyut; i++)
     {
         for (int j = 0; j < boyut; j++)
