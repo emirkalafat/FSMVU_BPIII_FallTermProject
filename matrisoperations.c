@@ -39,13 +39,16 @@ void matrisOzelDoldur(int **matris,int boyut,int doldurulacakSayi){
         }
     }
 }
-void matrisYazdir(int **matris,int boyut){
+void matrisYazdir(int **matris,int boyut,int tabDegiskeni){
     puts("*************************");
     for (int i = 0; i < boyut; i++)
     {
         for (int j = 0; j < boyut; j++)
         {
-            printf("%d\t",matris[i][j]);
+            if (tabDegiskeni==0)
+                printf("%d ",matris[i][j]);
+            else
+                printf("%d\t",matris[i][j]);  
         }
         puts("");
     }
@@ -65,7 +68,7 @@ int **matrisBuyutucu(int **matris,int boyut)
         }   
     }
     puts("*******Buyutulen Matris********");
-    matrisYazdir(ciktiMatrisi,boyut+2);
+    matrisYazdir(ciktiMatrisi,boyut+2,0);
     puts("*************");
     return ciktiMatrisi;
 }
@@ -133,7 +136,7 @@ int **operasyon1(int **matris1,int **matris2, int boyut1, int boyut2,int islemTi
     
 }
 int programButunlulukSaglamasi(int boyut1,int boyut2){
-    if (boyut1%2==1&&boyut2%2==1)
+    if (boyut1%2==1&&boyut2%2==1&&boyut1>=5&&boyut2>=3)
     {
         if (boyut1>boyut2)
             return 1;

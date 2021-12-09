@@ -19,16 +19,26 @@ int main(int argc, char const *argv[])
 
     int boyut1,boyut2,islemtTpi;
 
-    puts("1. Matrisin boyutunu giriniz [5][7][11]: ");
+    printf("1. Matrisin boyutunu giriniz [5][7][11]: ");
     scanf("%d",&boyut1);
-    puts("2. Matrisin boyutunu giriniz [3][5][7]: ");
+
+    A = matrisOlustur(boyut1);//verilen boyutta matris için bellekte alan ayrılması
+    matrisRandomDoldur(A,boyut1);//oluşturulan matrisin rastgele sayılar ile doldurulması
+    matrisYazdir(A,boyut1,0);//matrisin yazdırılması
+    ///////////////
+    printf("2. Matrisin boyutunu giriniz [3][5][7]: ");
     scanf("%d",&boyut2);
-    puts("[0]Basit Carpma \n[1]Karmasik Carpma");
-    puts("islem seciniz: ");
+    
+    B = matrisOlustur(boyut2);
+    matrisRandomDoldur(B,boyut2);
+    matrisYazdir(B,boyut2,0);
+    /////////////
+    puts("[0]Senaryo 1 \n[1]Senaryo 2");
+    printf("islem seciniz: ");
     scanf("%d",&islemtTpi);
 
-    int denetim=programButunlulukSaglamasi(boyut1,boyut2);
-    if (denetim==0)
+    //int denetim=programButunlulukSaglamasi(boyut1,boyut2);
+    if (programButunlulukSaglamasi(boyut1,boyut2)==0)//istenmeyen kullanıcı girişleri için denetim
     {
         puts("Hatali Deger Girisi....\nProgramdan Cikiliyor");
         free(A);
@@ -36,24 +46,9 @@ int main(int argc, char const *argv[])
         free(C);
         return EXIT_FAILURE;
     }
-    
-    
-    
-    //puts("***************");
-    A = matrisOlustur(boyut1);//verilen boyutta matris için bellekte alan ayrılması
-    matrisRandomDoldur(A,boyut1);//oluşturulan matrisin rastgele sayılar ile doldurulması
-    matrisYazdir(A,boyut1);//matrisin yazdırılması
-
-    //puts("***************");
-
-    B = matrisOlustur(boyut2);
-    matrisRandomDoldur(B,boyut2);
-    matrisYazdir(B,boyut2);
-
-    //puts("***************");
 
     C = operasyon1(A,B,boyut1,boyut2,islemtTpi);
-    matrisYazdir(C,matrisBoyutBulucu(boyut1,boyut2,islemtTpi));
+    matrisYazdir(C,matrisBoyutBulucu(boyut1,boyut2,islemtTpi),1);
 
     puts("***************");
     free(A);
