@@ -1,0 +1,9 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make.exe: Entering directory 'c:/Users/emirk/Documents/vsCode/C/BP3_P1'
+gcc -c -Wall main.c
+gcc -c -Wall matrisoperations.c
+gcc main.o matrisoperations.o -o BP3Proje
+del *.o
+BP3Proje.exe
+make.exe: Leaving directory 'c:/Users/emirk/Documents/vsCode/C/BP3_P1'
+ 
