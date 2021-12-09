@@ -9,31 +9,35 @@
 #include <stdlib.h>
 #include <time.h>
 #include "matrisoperations.c"
-#include "mo.c"
+
 
 int main(int argc, char const *argv[])
-{
-    
+{   
     int **A;
-    A = matrisOlustur(5);
-    randomMatrisOlustur(A,5);
-    matrisYazdirXXX(A,5);
-    /*
-    int **a;
-    a=matrisOlustur(5);
-    int **b;
-    b=matrisOlustur(3);
-    randomMatrisDoldur(a,5,5);
-    randomMatrisDoldur(b,3,3);
+    int **B;
+    int boyut1,boyut2,islemtTpi;
+    puts("1. Matrisin boyutunu giriniz: ");
+    scanf("%d",&boyut1);
+    puts("2. Matrisin boyutunu giriniz: ");
+    scanf("%d",&boyut2);
+    puts("[0]Basit Carpma \n [1]Karmasik Carpma");
+    puts("islem seciniz: ");
+    scanf("%d",&islemtTpi);
+    
+    puts("***************");
+    A = matrisOlustur(boyut1);
+    randomMatrisDoldur(A,boyut1);
+    matrisYazdir(A,boyut1);
 
-    matrisYazdir(A,5,5);
-    matrisYazdir(b,3,3);
-    
-    
-    
-    int **cikti = operasyon1(a,b,5,3);
-    
-    matrisYazdir(cikti,3,3);
-    */
+    puts("***************");
+
+    B = matrisOlustur(boyut2);
+    randomMatrisDoldur(B,boyut2);
+    matrisYazdir(B,boyut2);
+
+    puts("***************");
+
+    int **C = operasyon1(A,B,boyut1,boyut2,islemtTpi);
+    matrisYazdir(C,matrisBoyutBulucu(boyut1,boyut2,islemtTpi));
     return 0;
 }

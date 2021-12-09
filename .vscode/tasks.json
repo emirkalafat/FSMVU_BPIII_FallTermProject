@@ -95,7 +95,7 @@
         {
             "type": "cppbuild",
             "label": "C/C++: gcc.exe build active file ver(4)",
-            "command": "C:/MinGW/bin/gcc.exe",
+            "command": "C:/msys64/mingw64/bin/gcc.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
@@ -107,7 +107,7 @@
                 "-Wpedantic"
             ],
             "options": {
-                "cwd": "C:/MinGW/bin"
+                "cwd": "C:/msys64/mingw64/bin"
             },
             "problemMatcher": [
                 "$gcc"
@@ -118,7 +118,7 @@
         {
             "type": "cppbuild",
             "label": "C/C++: gcc.exe build active file ver(5)",
-            "command": "C:/MinGW/bin/gcc.exe",
+            "command": "C:/msys64/mingw64/bin/gcc.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
@@ -130,7 +130,7 @@
                 "-Wpedantic"
             ],
             "options": {
-                "cwd": "C:/MinGW/bin"
+                "cwd": "C:/msys64/mingw64/bin"
             },
             "problemMatcher": [
                 "$gcc"
@@ -141,7 +141,7 @@
         {
             "type": "cppbuild",
             "label": "C/C++: gcc.exe build active file ver(6)",
-            "command": "C:/MinGW/bin/gcc.exe",
+            "command": "C:/msys64/mingw64/bin/gcc.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
@@ -153,7 +153,7 @@
                 "-Wpedantic"
             ],
             "options": {
-                "cwd": "C:/MinGW/bin"
+                "cwd": "C:/msys64/mingw64/bin"
             },
             "problemMatcher": [
                 "$gcc"
@@ -164,7 +164,7 @@
         {
             "type": "cppbuild",
             "label": "C/C++: gcc.exe build active file ver(7)",
-            "command": "C:/MinGW/bin/gcc.exe",
+            "command": "C:/msys64/mingw64/bin/gcc.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
@@ -176,7 +176,7 @@
                 "-Wpedantic"
             ],
             "options": {
-                "cwd": "C:/MinGW/bin"
+                "cwd": "C:/msys64/mingw64/bin"
             },
             "problemMatcher": [
                 "$gcc"
@@ -187,7 +187,7 @@
         {
             "type": "cppbuild",
             "label": "C/C++: gcc.exe build active file ver(8)",
-            "command": "C:/MinGW/bin/gcc.exe",
+            "command": "C:/msys64/mingw64/bin/gcc.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
@@ -199,7 +199,7 @@
                 "-Wpedantic"
             ],
             "options": {
-                "cwd": "C:/MinGW/bin"
+                "cwd": "C:/msys64/mingw64/bin"
             },
             "problemMatcher": [
                 "$gcc"
@@ -210,7 +210,7 @@
         {
             "type": "cppbuild",
             "label": "C/C++: gcc.exe build active file ver(9)",
-            "command": "C:/MinGW/bin/gcc.exe",
+            "command": "C:/msys64/mingw64/bin/gcc.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
@@ -222,7 +222,7 @@
                 "-Wpedantic"
             ],
             "options": {
-                "cwd": "C:/MinGW/bin"
+                "cwd": "C:/msys64/mingw64/bin"
             },
             "problemMatcher": [
                 "$gcc"
@@ -233,7 +233,7 @@
         {
             "type": "cppbuild",
             "label": "C/C++: gcc.exe build active file ver(10)",
-            "command": "C:/MinGW/bin/gcc.exe",
+            "command": "C:/msys64/mingw64/bin/gcc.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
@@ -245,7 +245,7 @@
                 "-Wpedantic"
             ],
             "options": {
-                "cwd": "C:/MinGW/bin"
+                "cwd": "C:/msys64/mingw64/bin"
             },
             "problemMatcher": [
                 "$gcc"
@@ -256,7 +256,7 @@
         {
             "type": "cppbuild",
             "label": "C/C++: gcc.exe build active file ver(11)",
-            "command": "C:/MinGW/bin/gcc.exe",
+            "command": "C:/msys64/mingw64/bin/gcc.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
@@ -268,7 +268,7 @@
                 "-Wpedantic"
             ],
             "options": {
-                "cwd": "C:/MinGW/bin"
+                "cwd": "C:/msys64/mingw64/bin"
             },
             "problemMatcher": [
                 "$gcc"
@@ -279,7 +279,7 @@
         {
             "type": "cppbuild",
             "label": "C/C++: gcc.exe build active file ver(12)",
-            "command": "C:/MinGW/bin/gcc.exe",
+            "command": "C:/msys64/mingw64/bin/gcc.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
@@ -291,398 +291,7 @@
                 "-Wpedantic"
             ],
             "options": {
-                "cwd": "C:/MinGW/bin"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": "build",
-            "detail": "Task generated by Debugger."
-        },
-        {
-            "type": "cppbuild",
-            "label": "C/C++: gcc.exe build active file ver(13)",
-            "command": "C:/MinGW/bin/gcc.exe",
-            "args": [
-                "-fdiagnostics-color=always",
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "-Wall",
-                "-Wextra",
-                "-Wpedantic"
-            ],
-            "options": {
-                "cwd": "C:/MinGW/bin"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": "build",
-            "detail": "Task generated by Debugger."
-        },
-        {
-            "type": "cppbuild",
-            "label": "C/C++: gcc.exe build active file ver(14)",
-            "command": "C:/MinGW/bin/gcc.exe",
-            "args": [
-                "-fdiagnostics-color=always",
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "-Wall",
-                "-Wextra",
-                "-Wpedantic"
-            ],
-            "options": {
-                "cwd": "C:/MinGW/bin"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": "build",
-            "detail": "Task generated by Debugger."
-        },
-        {
-            "type": "cppbuild",
-            "label": "C/C++: gcc.exe build active file ver(15)",
-            "command": "C:/MinGW/bin/gcc.exe",
-            "args": [
-                "-fdiagnostics-color=always",
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "-Wall",
-                "-Wextra",
-                "-Wpedantic"
-            ],
-            "options": {
-                "cwd": "C:/MinGW/bin"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": "build",
-            "detail": "Task generated by Debugger."
-        },
-        {
-            "type": "cppbuild",
-            "label": "C/C++: gcc.exe build active file ver(16)",
-            "command": "C:/MinGW/bin/gcc.exe",
-            "args": [
-                "-fdiagnostics-color=always",
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "-Wall",
-                "-Wextra",
-                "-Wpedantic"
-            ],
-            "options": {
-                "cwd": "C:/MinGW/bin"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": "build",
-            "detail": "Task generated by Debugger."
-        },
-        {
-            "type": "cppbuild",
-            "label": "C/C++: gcc.exe build active file ver(17)",
-            "command": "C:/MinGW/bin/gcc.exe",
-            "args": [
-                "-fdiagnostics-color=always",
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "-Wall",
-                "-Wextra",
-                "-Wpedantic"
-            ],
-            "options": {
-                "cwd": "C:/MinGW/bin"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": "build",
-            "detail": "Task generated by Debugger."
-        },
-        {
-            "type": "cppbuild",
-            "label": "C/C++: gcc.exe build active file ver(18)",
-            "command": "C:/MinGW/bin/gcc.exe",
-            "args": [
-                "-fdiagnostics-color=always",
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "-Wall",
-                "-Wextra",
-                "-Wpedantic"
-            ],
-            "options": {
-                "cwd": "C:/MinGW/bin"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": "build",
-            "detail": "Task generated by Debugger."
-        },
-        {
-            "type": "cppbuild",
-            "label": "C/C++: gcc.exe build active file ver(19)",
-            "command": "C:/MinGW/bin/gcc.exe",
-            "args": [
-                "-fdiagnostics-color=always",
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "-Wall",
-                "-Wextra",
-                "-Wpedantic"
-            ],
-            "options": {
-                "cwd": "C:/MinGW/bin"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": "build",
-            "detail": "Task generated by Debugger."
-        },
-        {
-            "type": "cppbuild",
-            "label": "C/C++: gcc.exe build active file ver(20)",
-            "command": "C:/MinGW/bin/gcc.exe",
-            "args": [
-                "-fdiagnostics-color=always",
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "-Wall",
-                "-Wextra",
-                "-Wpedantic"
-            ],
-            "options": {
-                "cwd": "C:/MinGW/bin"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": "build",
-            "detail": "Task generated by Debugger."
-        },
-        {
-            "type": "cppbuild",
-            "label": "C/C++: gcc.exe build active file ver(21)",
-            "command": "C:/MinGW/bin/gcc.exe",
-            "args": [
-                "-fdiagnostics-color=always",
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "-Wall",
-                "-Wextra",
-                "-Wpedantic"
-            ],
-            "options": {
-                "cwd": "C:/MinGW/bin"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": "build",
-            "detail": "Task generated by Debugger."
-        },
-        {
-            "type": "cppbuild",
-            "label": "C/C++: gcc.exe build active file ver(22)",
-            "command": "C:/MinGW/bin/gcc.exe",
-            "args": [
-                "-fdiagnostics-color=always",
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "-Wall",
-                "-Wextra",
-                "-Wpedantic"
-            ],
-            "options": {
-                "cwd": "C:/MinGW/bin"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": "build",
-            "detail": "Task generated by Debugger."
-        },
-        {
-            "type": "cppbuild",
-            "label": "C/C++: gcc.exe build active file ver(23)",
-            "command": "C:/MinGW/bin/gcc.exe",
-            "args": [
-                "-fdiagnostics-color=always",
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "-Wall",
-                "-Wextra",
-                "-Wpedantic"
-            ],
-            "options": {
-                "cwd": "C:/MinGW/bin"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": "build",
-            "detail": "Task generated by Debugger."
-        },
-        {
-            "type": "cppbuild",
-            "label": "C/C++: gcc.exe build active file ver(24)",
-            "command": "C:/MinGW/bin/gcc.exe",
-            "args": [
-                "-fdiagnostics-color=always",
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "-Wall",
-                "-Wextra",
-                "-Wpedantic"
-            ],
-            "options": {
-                "cwd": "C:/MinGW/bin"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": "build",
-            "detail": "Task generated by Debugger."
-        },
-        {
-            "type": "cppbuild",
-            "label": "C/C++: gcc.exe build active file ver(25)",
-            "command": "C:/MinGW/bin/gcc.exe",
-            "args": [
-                "-fdiagnostics-color=always",
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "-Wall",
-                "-Wextra",
-                "-Wpedantic"
-            ],
-            "options": {
-                "cwd": "C:/MinGW/bin"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": "build",
-            "detail": "Task generated by Debugger."
-        },
-        {
-            "type": "cppbuild",
-            "label": "C/C++: gcc.exe build active file ver(26)",
-            "command": "C:/MinGW/bin/gcc.exe",
-            "args": [
-                "-fdiagnostics-color=always",
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "-Wall",
-                "-Wextra",
-                "-Wpedantic"
-            ],
-            "options": {
-                "cwd": "C:/MinGW/bin"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": "build",
-            "detail": "Task generated by Debugger."
-        },
-        {
-            "type": "cppbuild",
-            "label": "C/C++: gcc.exe build active file ver(27)",
-            "command": "C:/MinGW/bin/gcc.exe",
-            "args": [
-                "-fdiagnostics-color=always",
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "-Wall",
-                "-Wextra",
-                "-Wpedantic"
-            ],
-            "options": {
-                "cwd": "C:/MinGW/bin"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": "build",
-            "detail": "Task generated by Debugger."
-        },
-        {
-            "type": "cppbuild",
-            "label": "C/C++: gcc.exe build active file ver(28)",
-            "command": "C:/MinGW/bin/gcc.exe",
-            "args": [
-                "-fdiagnostics-color=always",
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "-Wall",
-                "-Wextra",
-                "-Wpedantic"
-            ],
-            "options": {
-                "cwd": "C:/MinGW/bin"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": "build",
-            "detail": "Task generated by Debugger."
-        },
-        {
-            "type": "cppbuild",
-            "label": "C/C++: gcc.exe build active file ver(29)",
-            "command": "C:/MinGW/bin/gcc.exe",
-            "args": [
-                "-fdiagnostics-color=always",
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "-Wall",
-                "-Wextra",
-                "-Wpedantic"
-            ],
-            "options": {
-                "cwd": "C:/MinGW/bin"
+                "cwd": "C:/msys64/mingw64/bin"
             },
             "problemMatcher": [
                 "$gcc"
