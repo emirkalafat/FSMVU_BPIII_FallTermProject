@@ -18,7 +18,7 @@ int main(int argc, char const *argv[])
     int **C;
 
     int boyut1,boyut2,islemtTpi;
-
+    
     printf("1. Matrisin boyutunu giriniz [5][7][11]: ");
     scanf("%d",&boyut1);
 

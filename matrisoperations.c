@@ -21,12 +21,18 @@ int **matrisOlustur(int matrisBoyutu){
 }
 void matrisRandomDoldur(int **matris,int boyut){
     srand(time(NULL));
+    puts("Rastgele sayi araligi belirleyiniz.(belirtilen sayilar dahil edilecektir)");
+    int baslangic,bitis;
+    printf("baslangic değeri: ");
+    scanf("%d",baslangic);
+    printf("bitis değeri: ");
+    scanf("%d",bitis);
     for (int i = 0; i < boyut; i++)
     {
         for (int j = 0; j < boyut; j++)
         {
             //srand(time(NULL));
-            matris[i][j]=rand()%10;
+            matris[i][j]=baslangic + rand()%(bitis-baslangic+1);
         }
     }
 }
@@ -143,4 +149,5 @@ int programButunlulukSaglamasi(int boyut1,int boyut2){
     }
     return 0;
 }
+
 
