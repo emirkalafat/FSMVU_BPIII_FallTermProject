@@ -64,7 +64,7 @@ int **matrisBuyutucu(int **matris,int boyut)
             ciktiMatrisi[i][j]=matris[i-1][j-1];
         }   
     }
-    puts("*******Büyütülen Matris********");
+    puts("*******Buyutulen Matris********");
     matrisYazdir(ciktiMatrisi,boyut+2);
     puts("*************");
     return ciktiMatrisi;
