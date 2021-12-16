@@ -23,9 +23,9 @@ void matrisRandomDoldur(int **matris,int boyut){
     srand(time(NULL));
     puts("Rastgele sayi araligi belirleyiniz.(belirtilen sayilar dahil edilecektir)");
     int baslangic,bitis;
-    printf("baslangic değeri: ");
+    printf("baslangic degeri: ");
     scanf("%d",&baslangic);
-    printf("bitis değeri: ");
+    printf("bitis degeri: ");
     scanf("%d",&bitis);
     //bu fonksiyon belirtilen başlangıç ve bitiş değerleri arasında rastgele sayılar ile verilen matrisi doldurmaya yarıyor.
     for (int i = 0; i < boyut; i++)
