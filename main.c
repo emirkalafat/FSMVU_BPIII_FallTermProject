@@ -1,6 +1,6 @@
 /*
 * @file main.c
-* @description operations with matrices main file
+* @description operations with matrices main.c file
 * @assignment Computer Engineering III Fallterm Project I
 * @date 1.12.2021
 * @author Ahmet Emir Kalafat ahmetemir.kalafat@stu.fsm.edu.tr
@@ -9,7 +9,6 @@
 #include <stdlib.h>
 #include <time.h>
 #include "matrisoperations.h"
-
 
 int main(int argc, char const *argv[])
 {   
