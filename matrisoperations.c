@@ -125,7 +125,6 @@ int **ikiMatrisKontrol(int **matris1,int **matris2, int boyut1, int boyut2,int i
             sum=0;
             sayac2=0;
         }
-        
     }
     return yeniMatris;
 }
