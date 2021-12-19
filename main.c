@@ -12,29 +12,50 @@
 
 int main(int argc, char const *argv[])
 {   
+    
     int **A;
     int **B;
     int **C;
 
-    int boyut1,boyut2,islemtTpi;
-    
-    printf("1. Matrisin boyutunu giriniz [5][7][11]: ");
-    scanf("%d",&boyut1);
+    int boyut1,boyut2,islemtTpi,randSeed;
+    if(argc==1){
+        puts("Ozel baslangic argumani belirtilmedi. Devam ediliyor.");
+        printf("1. Matrisin boyutunu giriniz [5][7][11]: ");
+        scanf("%d",&boyut1);
 
+        printf("2. Matrisin boyutunu giriniz [3][5][7]: ");
+        scanf("%d",&boyut2);
+
+        /////////////
+        puts("[0]Senaryo 1 \n[1]Senaryo 2");
+        printf("islem seciniz: ");
+        scanf("%d",&islemtTpi);
+        
+        randSeed=0;
+    }
+    else if(argc==5){
+        boyut1=atoi(argv[1]);
+        printf("1. Matrisin boyutu %d x %d olarak ayarlandi.\n",boyut1,boyut1);
+        boyut2=atoi(argv[2]);
+        printf("2. Matrisin boyutu %d x %d olarak ayarlandi.\n",boyut2,boyut2);
+        islemtTpi=atoi(argv[3]);
+        printf("Islem tipi [%d] secildi.\n",islemtTpi);
+        randSeed=atoi(argv[4]);
+        printf("rand fonksiyonu seed'i %d olarak belirlendi.\n",randSeed);
+    }
+    else{
+        puts("Eksik ya da yanlis arguman girisi...\nProgramdan Cikiliyor.");
+    }
     A = matrisOlustur(boyut1);//verilen boyutta matris için bellekte alan ayrılması
-    matrisRandomDoldur(A,boyut1);//oluşturulan matrisin rastgele sayılar ile doldurulması
+    matrisRandomDoldur(A,boyut1,randSeed);//oluşturulan matrisin rastgele sayılar ile doldurulması
     matrisYazdir(A,boyut1,0);//matrisin yazdırılması
     ///////////////
-    printf("2. Matrisin boyutunu giriniz [3][5][7]: ");
-    scanf("%d",&boyut2);
+    
     
     B = matrisOlustur(boyut2);
-    matrisRandomDoldur(B,boyut2);
+    matrisRandomDoldur(B,boyut2,randSeed);
     matrisYazdir(B,boyut2,0);
-    /////////////
-    puts("[0]Senaryo 1 \n[1]Senaryo 2");
-    printf("islem seciniz: ");
-    scanf("%d",&islemtTpi);
+    
 
     //int denetim=programButunlulukSaglamasi(boyut1,boyut2);
     if (programButunlulukSaglamasi(boyut1,boyut2)==0)//istenmeyen kullanıcı girişleri için denetim

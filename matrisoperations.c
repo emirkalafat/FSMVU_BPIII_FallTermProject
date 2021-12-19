@@ -19,21 +19,27 @@ int **matrisOlustur(int matrisBoyutu){
     }
     return matris;
 }
-void matrisRandomDoldur(int **matris,int boyut){
-    srand(time(NULL));
+void matrisRandomDoldur(int **matris,int boyut,int seed){
+    if (seed==0)
+        srand(time(NULL));
+    else
+        srand(seed);
+    /*//
     puts("Rastgele sayi araligi belirleyiniz.(belirtilen sayilar dahil edilecektir)");
     int baslangic,bitis;
     printf("baslangic degeri: ");
     scanf("%d",&baslangic);
     printf("bitis degeri: ");
     scanf("%d",&bitis);
-    //bu fonksiyon belirtilen başlangıç ve bitiş değerleri arasında rastgele sayılar ile verilen matrisi doldurmaya yarıyor.
+    *///
+    //bu fonksiyon belirtilen başlangıç ve bitiş değerleri[1-10] arasında rastgele sayılar ile verilen matrisi doldurmaya yarıyor.
     for (int i = 0; i < boyut; i++)
     {
         for (int j = 0; j < boyut; j++)
         {
             //srand(time(NULL));
-            matris[i][j]=baslangic + rand()%(bitis-baslangic+1);
+            matris[i][j]=1+ rand()%10;
+            //matris[i][j]=baslangic + rand()%(bitis-baslangic+1);
         }
     }
 }
@@ -155,9 +161,8 @@ int programButunlulukSaglamasi(int boyut1,int boyut2){
     if (boyut1%2==1&&boyut2%2==1&&boyut1>=5&&boyut2>=3)
     {
         if (boyut1>boyut2)
+            puts("1.Matrisin boyutu 2.Matrisin boyutuna eşit ya da küçük.");
             return 1;
     }
     return 0;
 }
-
-

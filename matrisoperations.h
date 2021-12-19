@@ -9,7 +9,7 @@
 #define _MATRISOPERATIONS_
 
 int **matrisOlustur(int diziBoyutu);
-void matrisRandomDoldur(int **dizi,int satir);
+void matrisRandomDoldur(int **dizi,int satir,int seed);
 void matrisOzelDoldur(int **dizi,int boyut,int doldurulacakSayi);
 void matrisYazdir(int **dizi,int boyut,int tabDegiskeni);
 int matrisBoyutBulucu(int matris1Boyut, int matris2Boyut, int islemTipi);
