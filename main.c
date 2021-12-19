@@ -12,12 +12,10 @@
 
 int main(int argc, char const *argv[])
 {   
-    
+    int boyut1,boyut2,islemtTpi,randSeed;
     int **A;
     int **B;
     int **C;
-
-    int boyut1,boyut2,islemtTpi,randSeed;
     if(argc==1){
         puts("Ozel baslangic argumani belirtilmedi. Devam ediliyor.");
         printf("1. Matrisin boyutunu giriniz [5][7][11]: ");
@@ -46,16 +44,6 @@ int main(int argc, char const *argv[])
     else{
         puts("Eksik ya da yanlis arguman girisi...\nProgramdan Cikiliyor.");
     }
-    A = matrisOlustur(boyut1);//verilen boyutta matris için bellekte alan ayrılması
-    matrisRandomDoldur(A,boyut1,randSeed);//oluşturulan matrisin rastgele sayılar ile doldurulması
-    matrisYazdir(A,boyut1,0);//matrisin yazdırılması
-    ///////////////
-    
-    
-    B = matrisOlustur(boyut2);
-    matrisRandomDoldur(B,boyut2,randSeed);
-    matrisYazdir(B,boyut2,0);
-    
 
     //int denetim=programButunlulukSaglamasi(boyut1,boyut2);
     if (programButunlulukSaglamasi(boyut1,boyut2)==0)//istenmeyen kullanıcı girişleri için denetim
@@ -66,6 +54,14 @@ int main(int argc, char const *argv[])
         free(C);
         return EXIT_FAILURE;
     }
+
+    A = matrisOlustur(boyut1);//verilen boyutta matris için bellekte alan ayrılması
+    matrisRandomDoldur(A,boyut1,randSeed);//oluşturulan matrisin rastgele sayılar ile doldurulması
+    matrisYazdir(A,boyut1,0);//matrisin yazdırılması
+    
+    B = matrisOlustur(boyut2);
+    matrisRandomDoldur(B,boyut2,randSeed);
+    matrisYazdir(B,boyut2,0);
 
     C = operasyon1(A,B,boyut1,boyut2,islemtTpi);
     matrisYazdir(C,matrisBoyutBulucu(boyut1,boyut2,islemtTpi),1);
