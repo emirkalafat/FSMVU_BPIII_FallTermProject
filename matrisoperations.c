@@ -38,7 +38,7 @@ void matrisRandomDoldur(int **matris,int boyut,int seed){
         for (int j = 0; j < boyut; j++)
         {
             //srand(time(NULL));
-            matris[i][j]=1+ rand()%10;
+            matris[i][j]=rand()%10;
             //matris[i][j]=baslangic + rand()%(bitis-baslangic+1);
         }
     }
@@ -152,17 +152,15 @@ int **operasyon1(int **matris1,int **matris2, int boyut1, int boyut2,int islemTi
     else
         puts("Hatali islem secimi....\nCikiliyor.");
     
-
     return ciktiMatrisi;
     
 }
 int programButunlulukSaglamasi(int boyut1,int boyut2){
     //girilen matris boyutlarının tek sayı olup olmadığı ve büyüklük küçüklük durumlarının kontrolünün sağlandığı fonksiyon. 
-    if (boyut1%2==1&&boyut2%2==1&&boyut1>=5&&boyut2>=3)
+    if (boyut1%2==1&&boyut2%2==1&&boyut1>=5&&boyut2>=3&&boyut1>boyut2)
     {
-        if (boyut1>boyut2)
-            puts("1.Matrisin boyutu 2.Matrisin boyutuna eşit ya da küçük.");
             return 1;
     }
+    puts("1.Matrisin boyutu 2.Matrisin boyutuna esit ya da kucuk.");
     return 0;
 }

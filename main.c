@@ -16,20 +16,19 @@ int main(int argc, char const *argv[])
     int **A;
     int **B;
     int **C;
+
     if(argc==1){
+        randSeed=0;
         puts("Ozel baslangic argumani belirtilmedi. Devam ediliyor.");
+        /////////////
         printf("1. Matrisin boyutunu giriniz [5][7][11]: ");
         scanf("%d",&boyut1);
-
         printf("2. Matrisin boyutunu giriniz [3][5][7]: ");
         scanf("%d",&boyut2);
-
         /////////////
         puts("[0]Senaryo 1 \n[1]Senaryo 2");
         printf("islem seciniz: ");
         scanf("%d",&islemtTpi);
-        
-        randSeed=0;
     }
     else if(argc==5){
         boyut1=atoi(argv[1]);
@@ -43,6 +42,7 @@ int main(int argc, char const *argv[])
     }
     else{
         puts("Eksik ya da yanlis arguman girisi...\nProgramdan Cikiliyor.");
+        return EXIT_FAILURE;
     }
 
     //int denetim=programButunlulukSaglamasi(boyut1,boyut2);
