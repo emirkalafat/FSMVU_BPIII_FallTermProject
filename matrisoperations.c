@@ -40,7 +40,7 @@ void matrisRandomDoldur(int **matris, int boyut, int seed)
 void matrisOzelDoldur(int **matris, int boyut, int doldurulacakSayi)
 {
     // bu fonksiyon oluşturulan matrisin istenilen sayı ile doldurulmasını sağlıyor
-    // test aşamasında işimi gören bir yöntem
+    // test aşamasında işimi gören bir yöntem.
     for (int i = 0; i < boyut; i++)
     {
         for (int j = 0; j < boyut; j++)
